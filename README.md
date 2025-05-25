@@ -64,28 +64,16 @@ This approach ensures smooth and real-time message exchange, mimicking a group c
 
 - Displays all incoming messages in real-time on the user’s console.
 
-Key Features
-Concurrent Client Handling: Supports multiple clients chatting simultaneously without blocking.
+## Key Features
+- Concurrent Client Handling: Supports multiple clients chatting simultaneously without blocking.
 
-Real-Time Broadcasting: Messages sent by any client are promptly delivered to all other connected clients.
+- Real-Time Broadcasting: Messages sent by any client are promptly delivered to all other connected clients.
 
-Username Identification: Each client is identified by a unique username to personalize conversations.
+- Username Identification: Each client is identified by a unique username to personalize conversations.
 
-Graceful Disconnection: Clients leaving the chat are handled without affecting the server or other clients.
+- Graceful Disconnection: Clients leaving the chat are handled without affecting the server or other clients.
 
-Resource Management: Proper closing of sockets and streams to avoid resource leaks.
-
-Learning Outcomes
-This project provided a practical understanding of:
-
-Designing a multi-client server architecture using Java sockets.
-
-Implementing multithreading for concurrent client handling.
-
-Managing input/output streams for network communication.
-
-Building real-time communication applications.
-
-Handling exceptions and ensuring resource cleanup in networked programs.
+- Resource Management: Proper closing of sockets and streams to avoid resource leaks.
 
 
+# Outputs 
