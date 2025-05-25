@@ -1,1 +1,15 @@
 # Multitheraded-Chat-Application
+
+COMPANY : CODTECH IT SOLUTIONS PVT. LTD.
+
+NAME : MOHD TANZEEM
+
+INTERN ID : CT08DA696
+
+DOMAIN : JAVA PROGRAMMING
+
+DURATION : 8 WEEKS
+
+MENTOR : NEELA SANTHOSH KUMAR
+
+# Task Description: Multithreaded Chat Application
