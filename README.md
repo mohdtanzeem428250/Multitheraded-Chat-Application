@@ -32,39 +32,37 @@ This approach ensures smooth and real-time message exchange, mimicking a group c
 
 - *Command-Line Interface (CLI):* The user interacts with the application through the terminal.
 
-Detailed Architecture
-Server (ChatServer.java)
-Listens for incoming client connections on a designated port (9090).
+## Detailed Architecture
+### Server (ChatServer.java)
+- Listens for incoming client connections on a designated port (9090).
 
-Upon accepting a connection, it spawns a new ClientHandler thread to manage communication with that client.
+- Upon accepting a connection, it spawns a new ClientHandler thread to manage communication with that client.
 
-Maintains a thread-safe collection of all active client handlers.
+- Maintains a thread-safe collection of all active client handlers.
 
-Ensures continuous operation, accepting new clients as long as the server is running.
+- Ensures continuous operation, accepting new clients as long as the server is running.
 
-Client Handler (ClientHandler.java)
-Dedicated to managing one client connection.
+### Client Handler (ClientHandler.java)
+- Dedicated to managing one client connection.
 
-Reads the client's username initially and adds the client handler to the shared list of active users.
+- Reads the client's username initially and adds the client handler to the shared list of active users.
 
-Listens for messages from the client in its own thread.
+- Listens for messages from the client in its own thread.
 
-Broadcasts incoming messages to all other connected clients.
+- Broadcasts incoming messages to all other connected clients.
 
-Handles client disconnection gracefully by removing the client from the list and notifying other users.
+- Handles client disconnection gracefully by removing the client from the list and notifying other users.
 
-Client (ChatClient.java)
-Connects to the server at localhost on port 9090.
+### Client (ChatClient.java)
+- Connects to the server at localhost on port 9090.
 
-Sends the username to the server upon connection.
+- Sends the username to the server upon connection.
 
-Runs two concurrent threads:
+- One for sending user input messages to the server.
 
-One for sending user input messages to the server.
+- Another for listening to broadcast messages from the server.
 
-Another for listening to broadcast messages from the server.
-
-Displays all incoming messages in real-time on the user’s console.
+- Displays all incoming messages in real-time on the user’s console.
 
 Key Features
 Concurrent Client Handling: Supports multiple clients chatting simultaneously without blocking.
