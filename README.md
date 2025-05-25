@@ -78,6 +78,10 @@ This approach ensures smooth and real-time message exchange, mimicking a group c
 
 # Outputs 
 
-## Start The Chat Client
+## Start The Server
 
 ![Image](https://github.com/user-attachments/assets/f86695b1-c523-448f-9bb6-2ed68a3cc59d)
+
+## Connect The Client Name
+
+![Image](https://github.com/user-attachments/assets/ac971ebf-ef71-4678-baab-f4ebd7683c18)
