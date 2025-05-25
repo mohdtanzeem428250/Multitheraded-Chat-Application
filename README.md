@@ -77,3 +77,7 @@ This approach ensures smooth and real-time message exchange, mimicking a group c
 
 
 # Outputs 
+
+## Start The Chat Client
+
+![Image](https://github.com/user-attachments/assets/f86695b1-c523-448f-9bb6-2ed68a3cc59d)
