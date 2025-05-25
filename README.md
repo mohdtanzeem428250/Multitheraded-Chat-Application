@@ -21,16 +21,16 @@ The chat application implements a classic client-server architecture where a sin
 
 This approach ensures smooth and real-time message exchange, mimicking a group chat platform where users can join, send messages, and leave the chat dynamically.
 
-Technologies and Concepts Used
-Java Standard Edition (SE)
+## Technologies and Concepts Used
+- *Java Standard Edition (SE)*
 
-Socket Programming: Using Socket and ServerSocket classes to establish network connections.
+- *Socket Programming:* Using Socket and ServerSocket classes to establish network connections.
 
-Multithreading: Each client connection is managed in an individual thread using the Runnable interface.
+- *Multithreading:* Each client connection is managed in an individual thread using the Runnable interface.
 
-Input/Output Streams: BufferedReader and BufferedWriter are used for efficient message transmission.
+- *Input/Output Streams:* BufferedReader and BufferedWriter are used for efficient message transmission.
 
-Command-Line Interface (CLI): The user interacts with the application through the terminal.
+- *Command-Line Interface (CLI):* The user interacts with the application through the terminal.
 
 Detailed Architecture
 Server (ChatServer.java)
